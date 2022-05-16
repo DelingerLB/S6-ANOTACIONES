@@ -1,0 +1,68 @@
+//P6 L4
+//PRINCIPAL
+/*
+package s6lu161;
+
+public class S6LU161 {
+
+    public static void main(String[] args) {
+        //PREGUNTA 6 LABORATORIO 4
+        CuentaAhorros c1,c2,c3;
+        c1=new CuentaAhorros();
+        c2=new CuentaAhorros(2000);
+        c3=new CuentaAhorros(3000);
+        
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        
+        c1.modificarTasaInteres(0.05);
+        c2.calcularInteresMensual();
+        System.out.println(c2);
+    }
+    
+}
+//CLASE
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package s6lu161;
+
+/**
+ *
+ * @author Metodos
+ */
+public class CuentaAhorros {
+    static double tasaInteres;
+    private double saldoAhorros;
+    
+    public CuentaAhorros(){
+        saldoAhorros=0;
+    }
+    
+    public CuentaAhorros(double inicial){
+        saldoAhorros=inicial;
+    }
+    
+    public double getSaldo(){
+        return saldoAhorros;
+    }
+    
+    public void setSaldo(double nuevosaldo){
+        saldoAhorros=nuevosaldo;
+    }
+    
+    public void calcularInteresMensual(){
+        setSaldo(getSaldo()*(1+tasaInteres));
+    }
+    
+    public void modificarTasaInteres(double nuevaTasa){
+        tasaInteres=nuevaTasa;
+    }
+    
+    public String toString(){
+        return ("Monto cuenta="+getSaldo());
+    }
+}*/
