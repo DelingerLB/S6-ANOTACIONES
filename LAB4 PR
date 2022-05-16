@@ -66,3 +66,81 @@ public class CuentaAhorros {
         return ("Monto cuenta="+getSaldo());
     }
 }*/
+--------------------------------------------------------------
+//FALTA COMPLETAR
+PRINCIPAL
+package preg4_7;
+
+/**
+ *
+ * @author Metodos
+ */
+public class Preg4_7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Cilindro c1=new Cilindro(4,6,10,5);
+        System.out.println("AREA: "+c1.area());
+        System.out.println("VOLUMEN: "+c1.volumen());
+        
+    }
+    
+}
+
+CLASS1
+ */
+package preg4_7;
+
+/**
+ *
+ * @author Metodos
+ */
+public class Cilindro {
+    double altura;
+    public Cilindro(){
+        altura=0;
+    }
+    public Cilindro(double x,double y,double r,double h){
+        super(x,y,r,h);
+        altura=h;
+        
+    }
+    public double area(){
+        return (2*super.area()+altura*super.perimetro())
+    }
+}
+
+CLASS2
+ */
+package preg4_7;
+
+/**
+ *
+ * @author Metodos
+ */
+public class Cilindro2 {
+    Circulo base;
+    double altura;
+    public Cilindro2(){
+        base=new Circulo();
+        altura=0;
+    }
+    public Cilindro2(double x,double y,double r,double h){
+        base=new Circulo(x,y,r);
+        altura=0;
+    }
+    public double area(){
+        return (2*base.area()+altura*base.perimetro());
+    }
+    public double volumen(){
+        return (altura*base.area());
+    }
+    public String toString(){
+        return ("Cilindro centro=("+base.posx+","+base.posy+""++""+);
+    }
+}
+
+CLASS3
